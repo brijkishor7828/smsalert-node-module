@@ -9,12 +9,13 @@ For any questions, please contact us at support@cozyvision.com
 # Installation
 
 ```bash
-$ npm install smsalert --save
+$ npm install smsalert
 ```
 
 # Send a message
 
 ```js
+    const SMS = require('smsalert');
     const sms = new SMS(username, password);
 	const resultMessage = sms.send(to, message,senderid);
     core.debug('SMS sent!');
